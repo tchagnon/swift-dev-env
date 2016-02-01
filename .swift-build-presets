@@ -1,0 +1,10 @@
+[preset: ds]
+release
+debug-swift
+debug-swift-stdlib
+
+[preset: dst]
+release
+debug-swift
+debug-swift-stdlib
+test
