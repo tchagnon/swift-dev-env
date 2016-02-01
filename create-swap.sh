@@ -2,7 +2,7 @@
 # Source: https://jeqo.github.io/blog/devops/vagrant-quickstart/
 
 # size of swapfile in megabytes
-swapsize=8192
+swapsize=16384
 
 # does the swap file already exist?
 grep -q "swapfile" /etc/fstab
@@ -23,3 +23,8 @@ fi
 df -h
 cat /proc/swaps
 cat /proc/meminfo | grep Swap
+
+# TO UNDO
+# sudo swapoff /swapfile
+# sudo rm /swapfile
+# sudo vim /etc/fstab
